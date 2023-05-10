@@ -1,0 +1,161 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+
+
+}
+
+body p {
+    font-size: 13px;
+}
+
+h2 {
+    margin: 15px 0 0 0;
+}
+
+#component-article {
+    background-color: #fff;
+}
+
+#component-article p {
+    padding: 2vh 0;
+    color: hsl(212, 23%, 69%);
+    font-size: 16px;
+
+}
+
+
+
+@media screen and (min-width:375px) {
+
+    #component-article {
+        grid-template-rows: repeat(2, 1fr);
+        display: grid;
+        margin: 100px 50px;
+        border-radius: 10px;
+    }
+
+    #text {
+        padding: 0px 20px;
+        color: hsl(217, 19%, 35%);
+        background-color: #fff;
+
+    }
+
+    #text {
+        padding: 0px 20px;
+
+    }
+
+    #user {
+        grid-template-columns: 1fr 3fr 1fr;
+        display: grid;
+        align-items: center;
+        grid-gap: 35px;
+
+    }
+
+
+    #user-img {
+        width: 70px;
+        border-radius: 50%;
+    }
+
+    .show {
+        display: block;
+        background-color: red;
+    }
+
+    .hide {
+        display: none;
+        background-color: blue;
+
+    }
+
+
+
+    #share {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+    }
+
+
+    .shareClicked {
+        /* display: none; */
+
+        width: 350px;
+        position: absolute;
+        height: 77px;
+        left: 49px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        /* display: grid; */
+        grid-template-columns: 1fr 3fr 1fr;
+        text-align: center;
+        align-items: center;
+        padding: 0 15px;
+        background-color: hsl(217, 19%, 35%);
+
+    }
+
+    .shareClicked img {
+
+        margin-right: 10px;
+    }
+
+    .shareClicked h4 {
+        text-transform: uppercase;
+        color: hsl(212, 23%, 69%);
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+
+
+    #component-article {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        margin: 150px 446px;
+        height: 281px;
+    }
+
+
+    #user {
+
+        grid-template-columns: 1fr 3fr 1fr;
+        display: grid;
+        align-items: center;
+        grid-gap: 35px;
+    }
+
+
+    #user-img {
+        width: 70px;
+        border-radius: 50%;
+    }
+
+    #share {
+        height: 30px;
+        width: 30px;
+        text-align: center;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: hsl(210, 46%, 95%);
+    }
+
+    .shareClicked {
+        position: absolute;
+        left: 1078px;
+        top: 249px;
+    }
+}
